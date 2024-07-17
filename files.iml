@@ -8,5 +8,8 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="jar_files (17)" level="project" />
+    <orderEntry type="library" name="javax.servlet-api-4.0.0-b07" level="project" />
+    <orderEntry type="library" name="jar_files (19)" level="project" />
+    <orderEntry type="library" name="jar_files (19)1" level="project" />
   </component>
 </module>
