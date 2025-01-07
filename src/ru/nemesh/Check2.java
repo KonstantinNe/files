@@ -1,11 +1,19 @@
 package ru.nemesh;
 
+
 public class Check2 {
 
     public static String[] getChisla(String b) {
-        String[] words = b.split(" ");
+       // InputStreamReader reader = new InputStreamReader(b);
+        String[] words = b.split("");
         for (String word : words) {
-            System.out.println(word);
+      //      InputStreamReader reader = new InputStreamReader(w);
+       //     int number = Integer.parseInt(reader.readLine());
+            if (word == String.valueOf(word));
+                System.out.println(1);
+          //Integer.parseInt(word);
+          //  int w = Integer.parseInt(word.readLine());
+          //  System.out.println(word);
 
     //    String[] stringArray = new String[0];
     //    for (int i = 0; i < stringArray.length; i++) {
