@@ -1,6 +1,7 @@
 package ru.nemesh;
 
 import java.io.File;
+// поиск файла в папке, определение формата
 
 public class Check3 {
     public static String getCheck3(String a) {

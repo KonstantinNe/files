@@ -7,7 +7,7 @@ public class Main {
         String result = null;
         String result2 = null;
 
-        String a = "D:\\simplexcel.xls";
+        String a = "D:\\simplexcel2.xls";
             result2 = Check3.getCheck3(a);
             result = Check.getCheck(a);
             //       System.out.println(ExcelParser.parse("D:\\simplexcel.xls"));
