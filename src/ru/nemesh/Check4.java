@@ -21,8 +21,9 @@ public class Check4 {
     //    public static <excelFilePath> void getIP(excelFilePath) {
         String excelFilePath = "D:\\simplexcel2.xls"; // Замените на ваш путь
         String ipAddressRegex = "((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)"; // Классический IPv4
-         int[] columnNumber = {1,2,3,4,5}; //  Ищем в столбце С (индекс 3)
-      int  array[] = {1,2,3,4,5};
+     //   int  array[] = {1,2,3,4,5};
+         int columnNumber =5; //  Ищем в столбце С (индекс 3)
+        //int  array[] = {1,2,3,4,5};
 
         List<String> ipAddresses = findIPAddressesInExcel(excelFilePath, ipAddressRegex, columnNumber);
 
