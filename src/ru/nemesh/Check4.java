@@ -22,21 +22,30 @@ public class Check4 {
         String excelFilePath = "D:\\simplexcel2.xls"; // Замените на ваш путь
         String ipAddressRegex = "((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)"; // Классический IPv4
      //   int  array[] = {1,2,3,4,5};
-         int columnNumber =5; //  Ищем в столбце С (индекс 3)
-        //int  array[] = {1,2,3,4,5};
+
+          int columnNumber =0; //  Ищем в столбце С (индекс 3)
+
+        do {
+
 
         List<String> ipAddresses = findIPAddressesInExcel(excelFilePath, ipAddressRegex, columnNumber);
 
         if (ipAddresses.isEmpty()) {
-       //     int sum = Arrays.stream(array).sum();
-       //     System.out.println("Сумма:" + sum);
-            System.out.println("IP-адреса не найдены в столбце " + (char)('A' + columnNumber)); // Добавлено указание столбца
+            //     int sum = Arrays.stream(array).sum();
+            //     System.out.println("Сумма:" + sum);
+
+            System.out.println("IP-адреса не найдены в столбце " + (char) ('A' + columnNumber)); // Добавлено указание столбца
+
         } else {
             System.out.println("Найденные IP-адреса в столбце " + (char)('A' + columnNumber) + ":"); // Добавлено указание столбца
             for (String ip : ipAddresses) {
                 System.out.println(ip);
             }
+          
         }
+        columnNumber++;
+    }while (columnNumber < 5);
+
         return excelFilePath;
     }
 
