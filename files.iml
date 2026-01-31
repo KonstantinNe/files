@@ -11,5 +11,14 @@
     <orderEntry type="library" name="javax.servlet-api-4.0.0-b07" level="project" />
     <orderEntry type="library" name="jar_files (19)" level="project" />
     <orderEntry type="library" name="jar_files (19)1" level="project" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/annotations/20.1.0/annotations-20.1.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>
