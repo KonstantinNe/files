@@ -15,21 +15,21 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class Check4 {
+public class Check5 {
 
-    public static String getCheck4(String a) {
-    //    public static <excelFilePath> void getIP(excelFilePath) {
+    public static String getCheck5(String a) {
+        //    public static <excelFilePath> void getIP(excelFilePath) {
         String excelFilePath = "D:\\simplexcel2.xls"; // Замените на ваш путь
         String ipAddressRegex = "((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)"; // Классический IPv4
-     //   int  array[] = {1,2,3,4,5};
-         int columnNumber =2; //  Ищем в столбце С (индекс 3)
+        //   int  array[] = {1,2,3,4,5};
+        int columnNumber =2; //  Ищем в столбце С (индекс 3)
         //int  array[] = {1,2,3,4,5};
 
         List<String> ipAddresses = findIPAddressesInExcel(excelFilePath, ipAddressRegex, columnNumber);
 
         if (ipAddresses.isEmpty()) {
-       //     int sum = Arrays.stream(array).sum();
-       //     System.out.println("Сумма:" + sum);
+            //     int sum = Arrays.stream(array).sum();
+            //     System.out.println("Сумма:" + sum);
             System.out.println("IP-адреса не найдены в столбце " + (char)('A' + columnNumber)); // Добавлено указание столбца
         } else {
             System.out.println("Найденные IP-адреса в столбце " + (char)('A' + columnNumber) + ":"); // Добавлено указание столбца
@@ -77,3 +77,4 @@ public class Check4 {
         return ipAddresses;
     }
 }
+
